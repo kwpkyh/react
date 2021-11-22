@@ -1,0 +1,13 @@
+◆ node.js 설치 (자바스크립트 라이브러리 설치 및 실행)
+
+CLI (command line interface) <-> GUI (graphic user interface)
+
+터미널 -> node -v, npm -v
+■ create-react-app 설치
+  ● npm 사용시 (powershell 말고 cmd로 설정)
+    ▶설치 : npm i -g create-react-app
+    ▶언인스톨 : npm uninstall -g create-react-app
+    ▶확인 : create-react-app -V (v대문자) 
+▶개발환경설치 : 해당폴더로 이동후 create-react-app .
+(프로젝트 시작 시마다 해 줘야 함, 집에서 할 필요 X
+ )
