@@ -1,8 +1,8 @@
-App = () => {
+const App = () => {
   return (
     <>
-      react App 
-      
+      react App
+      <div className="box"></div>
     </>
   );
 }
