@@ -1,0 +1,17 @@
+변수 처리
+  -> return문 안에서 변수를 생성하거나 일반 스크립트를 작성할 수 없음
+  -> return문 안에서 변수나 함수 사용시 {} 사용
+
+
+함수, 이벤트 연동
+  -> 객체의 속성 이벤트를 사용
+
+
+State 변수
+  -> 값이 변하면 화면이 바뀜
+  -> 함수 import
+     import useState //import React, { useState } from 'react'; 
+  -> 선언
+     let [name,setName] = useState('홍길동') //let name = '홍길동'
+  -> 변경
+     setName(e.target.innerText) //name = e.target.innerHTML   

@@ -1,0 +1,33 @@
+▶ frameworks
+  ⇨ JS만 활용하여 컴포넌트 구조를 설계할 수 있음
+  ⇨ 비동기 데이터 수신이 가능
+  ⇨ 데이터 변화를 감지하여 화면 갱신(re-rendering)
+  ⇨ JSX 문법을 사용
+
+▶ SPA (Single Page App)
+  ⇨ 여러 페이지처럼 보이는 single Page
+     페이지 이동시 시간이 걸리지 않는다
+     설계가 복잡
+
+▶ PWA (Progressive Web App)
+  ⇨ HTML, CSS, JS로 앱 설계 가능
+
+▶ 개발 환경 구축
+  ⇨ node.js 설치 (JS 라이브러리 관리 프로그램)
+  ⇨ npm (JS 설치 및 실행기)
+  ⇨ create-react-app (react 개발 환경 구축에 필요)
+  ⇨ barbel, weppack
+
+▶ JSX 문법
+  ⇨ HTML 유사 구조를 이용하여 스크립트 문법 작성 가능
+  ⇨ barbel 라이브러리가 설치되어 있어야 함
+  ⇨ return() 안의 객체가 컴포넌트가 됨
+  ⇨ return() 안의 객체는 한 개의 부모 객체로 감싸져야 함
+  ⇨ return() 안에서 if, for 등 일반 스크립트 작성 불가능
+     허락된 script만 작성
+  ⇨ XML 문법 따름, 단독 객체는 self-closing 필수 <input />
+  ⇨ className, defaultValue, onClick
+
+▶ react 문법
+  ⇨ Class 문법
+  ⇨ hooks 문법 (함수 형태)

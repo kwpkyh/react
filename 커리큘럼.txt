@@ -1,4 +1,10 @@
-◆ node.js 설치 (자바스크립트 라이브러리 설치 및 실행)
+------------------------frameworks---------------
+Angular
+Vue.js
+React
+-컴포넌트 구조 (header, footer)
+-데이터의 변화를 감지(ex. 버튼 클릭, output 출력)하여 view 갱신
+-비동기 데이터 수신 
 
 CLI (command line interface) <-> GUI (graphic user interface)
 
@@ -11,3 +17,12 @@ CLI (command line interface) <-> GUI (graphic user interface)
 ▶개발환경설치 : 해당폴더로 이동후 create-react-app .
 (프로젝트 시작 시마다 해 줘야 함, 집에서 할 필요 X
  )
+
+
+◆ node.js 설치 (자바스크립트 라이브러리 설치 및 실행)
+   npm (라이브러리 설치 기능)
+   create-react-app (react 개발 환경 구축 라이브러리)
+   create-react-app .
+
+
+01 state & ref, 더하기
