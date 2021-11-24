@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
 
 const App = () => {
-  let [name,setName] = useState('홍길동') //let name = '홍길동'
+  const [_result, _setResult] = useState(0)
 
-  let fn = (e) => {
-    setName(e.target.innerText) //name = e.target.innerHTML    
+  const fn = () => {
+    document.querySelector('button').addEventListener('click',()=>{
+      const n = 0
+      const r = n + 1
+      _setResult(r)
+    })
   }
   return (
     <>
-      <p>안녕하세요.. {name}입니다</p>
-
-      <button onClick={fn}>홍길동</button> 
-      <button onClick={fn}>아무개</button>
+      <p>{_result}</p>
+      <button onClick={fn}>1씩 증가</button>
     </>
   );
 };
