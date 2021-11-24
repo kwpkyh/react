@@ -1,14 +1,9 @@
 import React, { useState } from 'react';
 
 const App = () => {
-  const [_result, _setResult] = useState(0)
-
+  const [_result, _setResult] = useState(1)
   const fn = () => {
-    document.querySelector('button').addEventListener('click',()=>{
-      const n = 0
-      const r = n + 1
-      _setResult(r)
-    })
+    _setResult(_result+1)
   }
   return (
     <>
