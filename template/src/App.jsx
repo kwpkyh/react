@@ -1,21 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const App = () => {
+  const [_arr, _setArr] = useState([])
+  const fnAdd = () => {
+    let key = Date.now() //click할 때마다 바뀌는 값
+    _setArr([..._arr, key])
+  }
+  const fnDel = (e) => {
+    let key = parseInt(e.target.getAttribute('data-n'))
+    let arr = _arr.filter((v)=>{
+      return v !== key
+    })
+    _setArr([...arr])
+  }
   return (
     <>
-      <p>이름, 나이, 성별을 입력 후 버튼 클릭하면 성별 기준 구분 출력</p>
-      이름: <input type="text" /> <br />
-      나이: <input type="text" /> <br />
-      <input type="radio" />여
-      <input type="radio" />남
-      <br />
-      <button>추가</button>
+      <button onClick={fnAdd}>배열 추가</button>
       <hr />
-      여자 명단
-      <p></p>
-      <hr />
-      남자 명단
-      <p></p>
+      {
+        _arr.map((v)=>{
+          return(
+            <p key={v}>
+              {v}
+              <button onClick={fnDel} data-n={v}>삭제</button>
+            </p>
+          )
+        })
+      }
     </>
   );
 };
