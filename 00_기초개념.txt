@@ -27,6 +27,8 @@
      허락된 script만 작성
   ⇨ XML 문법 따름, 단독 객체는 self-closing 필수 <input />
   ⇨ className, defaultValue, onClick
+  ⇨ 변수나 함수를 출력 시에는 {}를 사용
+  ⇨ {} 안에서는 오직 함수나 변수만 사용 가능 (조건문, for 구문 X)
 
 ▶ react 문법
   ⇨ Class 문법

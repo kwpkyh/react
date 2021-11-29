@@ -1,0 +1,47 @@
+배열
+  -> State hooks
+    실제로 값이 변경될 경우에만 화면을 갱신
+    배열과 객체를 복사할 경우 반드시 전개연산자 사용
+    let arrCopy = _arr X (참조 예시, 값 안 바뀜)
+    let arrCopy = [..._arr] (실제 복사, 값 바뀜)
+
+  -> react 배열 추가 예시
+    예시 1
+      let arrCopy = [..._arr] //기존 배열 arrCopy에 복사
+      arrCopy.push(name) //복사된 배열에 이름을 추가
+      _setArr(arrCopy) //_arr State를 arrCopy로 다시 변경
+
+    예시2
+      _setAtt([..._arr, 홍길동]) //_arr State 변수에 홍길동을 추가해서 다시 변경
+
+  -> 배열, 객체를 useState로 변경할 경우 전개 연산자[...]를 사용
+    _setArr([..._arr, 홍길동]) //_arr라는 변수에 '홍길동' 추가
+
+  -> 배열을 순환하여 출력
+    배열 형태로 return이 되어야 출력 가능
+
+    오답
+      arr = [1,2,3]
+      arr.forEach(()=>{
+        return v
+      }) //실행 결과: 1,2,3이라는 값을 차례로 return
+
+    정답
+      arr.map((v)=>{
+        return v
+      }) //실행 결과, [1,2,3]이라는 배열을 return
+
+  -> 배열 안에 객체가 존재할 경우 배열 출력 불가 (순환하며 출력)
+  
+    오답
+      arr = [
+        {name: 홍, age: 23},
+        {name: 김, age: 26}
+      ]
+      {arr} //배열 전체 출력 불가능, Error
+
+    정답
+      arr = [
+        {name: 홍, age: 23},
+        {name: 김, age: 26}
+    ]
